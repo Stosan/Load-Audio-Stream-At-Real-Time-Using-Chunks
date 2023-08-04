@@ -3,10 +3,6 @@ import datetime
 import os
 import asyncio
 
-import os
-import datetime
-import aiohttp
-import asyncio
 
 class AudioURLLoader:
     async def __call__(self, queue_data, stream_url, desired_duration):
@@ -49,8 +45,8 @@ loader = AudioURLLoader()
 # Specify the output file path and stream URL
 folder_path = '/data'
 stream_url = "https://go.webgateready.com/bondfm/"
-target_start_time = datetime.datetime.strptime("12:38:00", "%H:%M:%S")
-target_end_time = datetime.datetime.strptime("12:44:00", "%H:%M:%S")
+target_start_time = datetime.datetime.strptime("12:57:00", "%H:%M:%S")
+target_end_time = datetime.datetime.strptime("12:59:00", "%H:%M:%S")
 
 async def run(target_start_time,target_end_time):
     while datetime.datetime.now().time() < target_end_time.time():
